@@ -1,0 +1,151 @@
+
+/* Land Calculator */
+
+.calculator-section {
+  padding: 72px 6%;
+  background: #f4f8f1;
+}
+
+.calculator-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e3ebdf;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(30, 70, 35, 0.06);
+}
+
+.calculator-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.calculator-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  color: #ffffff;
+  background: #287a3d;
+  border-radius: 14px;
+}
+
+.calculator-heading h2 {
+  margin: 0 0 6px;
+  color: #1e3322;
+  font-size: 25px;
+}
+
+.calculator-heading p {
+  margin: 0;
+  color: #687568;
+  font-size: 14px;
+}
+
+.calculator-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: end;
+  gap: 22px;
+}
+
+.calculator-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.calculator-field label {
+  color: #304433;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.calculator-field input,
+.calculator-field select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  color: #27382a;
+  background: #ffffff;
+  border: 1px solid #d8e2d5;
+  border-radius: 10px;
+  outline: none;
+  font: inherit;
+}
+
+.calculator-field input:focus,
+.calculator-field select:focus {
+  border-color: #287a3d;
+  box-shadow: 0 0 0 3px rgba(40, 122, 61, 0.12);
+}
+
+.calculator-result {
+  min-height: 108px;
+  padding: 16px;
+  background: #edf7ed;
+  border: 1px solid #d8ebd6;
+  border-radius: 12px;
+}
+
+.calculator-result > span {
+  color: #526653;
+  font-size: 13px;
+}
+
+.calculator-result h3 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 8px 0;
+  color: #24743a;
+  font-size: 28px;
+}
+
+.calculator-result small {
+  color: #647764;
+  font-size: 12px;
+}
+
+.calculator-note {
+  margin: 20px 0 0;
+  color: #718071;
+  font-size: 12px;
+}
+
+@media (max-width: 850px) {
+  .calculator-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .calculator-result {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 550px) {
+  .calculator-section {
+    padding: 44px 5%;
+  }
+
+  .calculator-container {
+    padding: 22px 16px;
+  }
+
+  .calculator-heading h2 {
+    font-size: 20px;
+  }
+
+  .calculator-form {
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-result {
+    grid-column: auto;
+  }
+}

@@ -1,0 +1,291 @@
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 17px 6%;
+  background: rgba(255, 255, 255, 0.96);
+  opacity: 0.96;
+  border-bottom: 0px solid #e5eae3;
+  backdrop-filter: blur(14px);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #174d35;
+  font-family: 'Manrope', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+a.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  right: 112px;
+  position: relative;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 100px;
+  height: 55px;
+}
+
+.brand-highlight {
+  color: #80b943;
+}
+
+.brand-country {
+  font-size: 12px;
+  font-weight: 600;
+  color: grey;
+  top: -20px;
+  position: relative;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  padding-left: 12%;
+  position: relative;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+
+.navbar-links a {
+  color: #647067;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: #174d35;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 0;
+  background: transparent;
+  color: #174d35;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 12px 19px;
+  border: 0;
+  border-radius: 10px;
+  background: #174d35;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.primary-btn:hover {
+  background: #103b28;
+  transform: translateY(-2px);
+}
+
+.mobile-menu {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: #174d35;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-links {
+    order: 4;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .navbar-brand {
+    font-size: 22px;
+  }
+
+  .navbar-links {
+    gap: 15px;
+  }
+
+  .navbar-links a {
+    font-size: 12px;
+  }
+
+  .navbar-actions {
+    margin-left: auto;
+  }
+
+  .navbar-actions .primary-btn {
+    display: none;
+  }
+}
+
+
+
+.profile-container {
+  position: relative;
+}
+
+.profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid #dce5dc;
+  border-radius: 8px;
+  background: white;
+  color: #263b2b;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: 405px;
+  max-width: calc(100vw - 30px);
+  padding: 14px;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 12px;
+}
+
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  border-radius: 50%;
+  background: #fce7f3;
+  color: #db2777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.profile-user-info h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+.profile-user-info span {
+  color: #00a84f;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.profile-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 6px 0 22px;
+}
+
+.profile-contact div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #555;
+  font-size: 16px;
+}
+
+.profile-contact span {
+  overflow-wrap: anywhere;
+}
+
+.profile-contact svg {
+  color: #666;
+  flex-shrink: 0;
+}
+
+.profile-footer {
+  border-top: 1px solid #eaeaea;
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.manage-account,
+.sign-out {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 6px 0;
+}
+
+.manage-account {
+  color: #00a84f;
+  font-weight: 600;
+}
+
+
+.sign-out {
+  color: #777;
+}
+
+.sign-out-icon {
+  position: relative;
+  top: 2px;
+}
+
+.manage-account:hover,
+.sign-out:hover {
+  opacity: 0.75;
+}

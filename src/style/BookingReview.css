@@ -1,0 +1,255 @@
+
+/* Booking Review Screen */
+
+.review-page {
+  min-height: 70vh;
+  padding: 48px 6%;
+  background: #f5f8f3;
+}
+
+.review-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.review-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+  padding: 10px 0;
+  color: #287a3d;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.review-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.review-heading-icon {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  place-items: center;
+  color: #287a3d;
+  background: #e4f2e1;
+  border-radius: 16px;
+}
+
+.review-heading h1 {
+  margin: 0 0 7px;
+  color: #213627;
+  font-size: 30px;
+}
+
+.review-heading p {
+  margin: 0;
+  color: #718071;
+  font-size: 14px;
+}
+
+.review-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr);
+  align-items: start;
+  gap: 24px;
+}
+
+.review-details-card,
+.review-summary-card {
+  padding: 26px;
+  background: #fff;
+  border: 1px solid #e1e9de;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(30, 70, 35, 0.04);
+}
+
+.review-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+  color: #287a3d;
+  border-bottom: 1px solid #edf0eb;
+}
+
+.review-card-title h2,
+.review-summary-card h2 {
+  margin: 0;
+  color: #24392a;
+  font-size: 19px;
+}
+
+.review-equipment {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 0;
+  border-bottom: 1px solid #edf0eb;
+}
+
+.review-tractor-icon {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  place-items: center;
+  color: #287a3d;
+  background: #edf7ed;
+  border-radius: 15px;
+}
+
+.review-equipment h3 {
+  margin: 0 0 6px;
+  color: #24392a;
+  font-size: 18px;
+}
+
+.review-equipment p {
+  margin: 0;
+  color: #287a3d;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.review-detail-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 17px 0;
+  border-bottom: 1px solid #edf0eb;
+}
+
+.review-detail-row:last-child {
+  border-bottom: 0;
+}
+
+.review-detail-row > span {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #708070;
+  font-size: 13px;
+}
+
+.review-detail-row > span svg {
+  flex-shrink: 0;
+  color: #287a3d;
+}
+
+.review-detail-row > strong {
+  color: #2c3e30;
+  font-size: 13px;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.review-detail-row .review-location {
+  max-width: 55%;
+}
+
+.review-summary-card h2 {
+  margin-bottom: 23px;
+}
+
+.review-price-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 18px;
+  color: #718071;
+  font-size: 13px;
+}
+
+.review-price-row strong {
+  color: #334535;
+  text-align: right;
+}
+
+.review-grand-total {
+  margin-top: 8px;
+  padding: 20px 0;
+  border-top: 1px dashed #d9e4d5;
+}
+
+.review-grand-total > span {
+  color: #617261;
+  font-size: 13px;
+}
+
+.review-grand-total strong {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 8px;
+  color: #24743a;
+  font-size: 31px;
+}
+
+.review-disclaimer {
+  color: #788578;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.review-confirm-button,
+.review-edit-button {
+  width: 100%;
+  min-height: 47px;
+  margin-top: 12px;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.review-confirm-button {
+  color: #fff;
+  background: #287a3d;
+  border: 1px solid #287a3d;
+}
+
+.review-confirm-button:hover {
+  background: #206431;
+}
+
+.review-edit-button {
+  color: #287a3d;
+  background: #fff;
+  border: 1px solid #cfe0ca;
+}
+
+@media (max-width: 800px) {
+  .review-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .review-page {
+    padding: 28px 5%;
+  }
+
+  .review-heading h1 {
+    font-size: 24px;
+  }
+
+  .review-details-card,
+  .review-summary-card {
+    padding: 20px 16px;
+  }
+
+  .review-detail-row {
+    gap: 10px;
+  }
+}

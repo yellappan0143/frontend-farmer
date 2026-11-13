@@ -1,0 +1,76 @@
+.warning-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.warning-modal {
+    width: 90%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(117, 109, 109, 0.2);
+    animation: warningFadeIn 0.2s ease-in-out;
+}
+
+.warning-modal h3 {
+    color: #d97706;
+    font-size: 21px;
+    margin: 0 0 15px;
+}
+
+.warning-modal p {
+    color: #444444;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.warning-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.warning-actions button {
+    min-width: 85px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.warning-no {
+    background: #e5e7eb;
+    color: #333333;
+}
+
+.warning-yes {
+    background: #287a3c;
+    color: white;
+}
+
+.warning-no:hover {
+    background: #d1d5db;
+}
+
+.warning-yes:hover {
+    background: #1e602f;
+}
+
+@keyframes warningFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

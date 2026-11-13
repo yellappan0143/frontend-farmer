@@ -1,0 +1,29 @@
+
+.confirmation-modal {
+  text-align: center;
+}
+
+.confirmation-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 16px;
+  color: #16a34a;
+}
+
+.confirmation-details {
+  margin: 20px 0;
+  padding: 16px;
+  border-radius: 10px;
+  background: #f8fafc;
+  text-align: left;
+}
+
+.confirmation-details p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+
